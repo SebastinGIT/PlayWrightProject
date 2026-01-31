@@ -12,6 +12,10 @@ public class FlipKartTransaction extends PlayWrightBase {
             page.navigate("https://www.flipkart.com");
             System.out.println("Navigated to FlipKart.com");
 
+            //Maximize the window
+            page.setViewportSize(1920, 1080);
+            System.out.println("Browser window maximized");
+
             String pageTitle = page.title();
             System.out.println("Title of the page : " + pageTitle);
             return true;

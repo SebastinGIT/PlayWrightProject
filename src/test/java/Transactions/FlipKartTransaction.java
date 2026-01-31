@@ -17,7 +17,7 @@ public class FlipKartTransaction extends PlayWrightBase {
             System.out.println("Browser window maximized");
 
             String pageTitle = page.title();
-            System.out.println("Title of the page : " + pageTitle);
+            System.out.println("Title of the page is: " + pageTitle);
             return true;
         } catch (Exception e) {
             e.printStackTrace();
